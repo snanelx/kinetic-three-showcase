@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Интерактивный frontend showcase с Three.js, fullscreen-секциями и плавными анимациями." />
+    <title>Кинетическая Витрина</title>
+    <script type="module" crossorigin src="/kinetic-three-showcase/assets/index-DK_yoAa7.js"></script>
+    <link rel="stylesheet" crossorigin href="/kinetic-three-showcase/assets/index-Cs8JGmEi.css">
+  </head>
+  <body>
+    <canvas id="space"></canvas>
+    <main id="app">
+      <nav class="topbar" aria-label="Навигация по секциям">
+        <a class="brand" href="#intro" aria-label="К началу">Кинетическая Витрина</a>
+        <div class="dots" role="tablist" aria-label="Секции проекта"></div>
+      </nav>
+
+      <section class="panel is-active" data-section="0" id="intro">
+        <p class="eyebrow">Frontend / Three.js / Motion</p>
+        <h1>Интерфейс, который двигается как продукт, а не как слайд.</h1>
+        <p class="lead">
+          Одностраничная витрина с 3D-сценой, управляемыми fullscreen-секциями,
+          адаптивной типографикой и мягкими переходами между состояниями.
+        </p>
+        <div class="actions">
+          <button class="primary" data-next type="button">Смотреть дальше</button>
+          <span class="hint">Колесо мыши, стрелки или свайп</span>
+        </div>
+      </section>
+
+      <section class="panel" data-section="1" id="motion" aria-hidden="true" style="visibility: hidden;">
+        <p class="eyebrow">01 / Анимация</p>
+        <h2>Секции появляются плавно, а 3D-сцена реагирует на контекст.</h2>
+        <p>
+          При переходе меняется цветовая палитра, скорость вращения и плотность
+          частиц. Это показывает владение не только версткой, но и визуальным
+          состоянием приложения.
+        </p>
+        <ul class="feature-list">
+          <li>Плавная смена секций без резкого скролла.</li>
+          <li>Синхронизация текста и WebGL-фона.</li>
+          <li>Поддержка клавиатуры, wheel и touch.</li>
+        </ul>
+      </section>
+
+      <section class="panel" data-section="2" id="craft" aria-hidden="true" style="visibility: hidden;">
+        <p class="eyebrow">02 / Детали</p>
+        <h2>Адаптив под мобильные экраны без потери атмосферы.</h2>
+        <p>
+          На desktop сцена остается объемной и широкой, а на мобильных интерфейс
+          сохраняет читаемость, крупные зоны касания и безопасные отступы.
+        </p>
+        <div class="stats">
+          <article>
+            <strong>60 FPS</strong>
+            <span>requestAnimationFrame</span>
+          </article>
+          <article>
+            <strong>3D</strong>
+            <span>Three.js сцена</span>
+          </article>
+          <article>
+            <strong>100%</strong>
+            <span>чистый frontend</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" data-section="3" id="final" aria-hidden="true" style="visibility: hidden;">
+        <p class="eyebrow">03 / Портфолио</p>
+        <h2>Такой проект удобно показывать как proof of taste.</h2>
+        <p>
+          Он демонстрирует чувство композиции, работу с анимацией, WebGL,
+          TypeScript и умение собрать эффектный интерфейс без backend-зависимостей.
+        </p>
+        <div class="actions">
+          <button class="primary" data-restart type="button">Вернуться в начало</button>
+          <span class="hint">Готово для GitHub Pages или Vercel</span>
+        </div>
+      </section>
+
+      <div class="arrows" aria-label="Управление секциями">
+        <button data-prev type="button" aria-label="Предыдущая секция">↑</button>
+        <button data-next type="button" aria-label="Следующая секция">↓</button>
+      </div>
+    </main>
+  </body>
+</html>
