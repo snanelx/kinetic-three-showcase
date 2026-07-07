@@ -54,7 +54,3 @@ npm run visual:check
 ```
 
 Проверка запускает Playwright и убеждается, что WebGL canvas рендерит непустые пиксели на desktop и mobile viewport.
-
-## Зачем Этот Проект В Портфолио
-
-Он показывает frontend-вкус: работу с motion design, WebGL, композицией, адаптивом и интерактивностью. Такой проект хорошо дополняет backend-heavy проекты вроде PulseOps и Tenderly CRM.
