@@ -1,7 +1,7 @@
 # Кинетическая витрина
 
 Чистый frontend-проект для портфолио: fullscreen-секции, плавные переходы, адаптивный интерфейс и интерактивная 3D-сцена на Three.js.
-
+## [ССЫЛКА](https://snanelx.github.io/kinetic-three-showcase)
 ## Стек
 
 - Vite
